@@ -1,0 +1,666 @@
+[
+    {
+        "path": [],
+        "type": "CompilationUnit",
+        "position": "None"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list"
+        ],
+        "type": "ClassDeclaration",
+        "position": "Position(line=3, column=8)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list"
+        ],
+        "type": "MethodDeclaration",
+        "position": "Position(line=4, column=19)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list"
+        ],
+        "type": "FormalParameter",
+        "position": "Position(line=4, column=29)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "FormalParameter"
+        ],
+        "type": "ReferenceType",
+        "position": "None"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list"
+        ],
+        "type": "LocalVariableDeclaration",
+        "position": "Position(line=5, column=9)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "LocalVariableDeclaration"
+        ],
+        "type": "BasicType",
+        "position": "None"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "LocalVariableDeclaration",
+            "list"
+        ],
+        "type": "VariableDeclarator",
+        "position": "None"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "LocalVariableDeclaration",
+            "list",
+            "VariableDeclarator"
+        ],
+        "type": "Literal",
+        "position": "Position(line=5, column=22)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list"
+        ],
+        "type": "LocalVariableDeclaration",
+        "position": "Position(line=6, column=9)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "LocalVariableDeclaration"
+        ],
+        "type": "BasicType",
+        "position": "None"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "LocalVariableDeclaration",
+            "list"
+        ],
+        "type": "VariableDeclarator",
+        "position": "None"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "LocalVariableDeclaration",
+            "list",
+            "VariableDeclarator"
+        ],
+        "type": "MethodInvocation",
+        "position": "Position(line=6, column=26)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "LocalVariableDeclaration",
+            "list",
+            "VariableDeclarator",
+            "MethodInvocation",
+            "list"
+        ],
+        "type": "MemberReference",
+        "position": "Position(line=6, column=45)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list"
+        ],
+        "type": "StatementExpression",
+        "position": "Position(line=7, column=9)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "StatementExpression"
+        ],
+        "type": "MethodInvocation",
+        "position": "Position(line=7, column=9)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "StatementExpression",
+            "MethodInvocation",
+            "list"
+        ],
+        "type": "BinaryOperation",
+        "position": "None"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "StatementExpression",
+            "MethodInvocation",
+            "list",
+            "BinaryOperation"
+        ],
+        "type": "BinaryOperation",
+        "position": "None"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "StatementExpression",
+            "MethodInvocation",
+            "list",
+            "BinaryOperation",
+            "BinaryOperation"
+        ],
+        "type": "BinaryOperation",
+        "position": "None"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "StatementExpression",
+            "MethodInvocation",
+            "list",
+            "BinaryOperation",
+            "BinaryOperation",
+            "BinaryOperation"
+        ],
+        "type": "Literal",
+        "position": "Position(line=7, column=28)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "StatementExpression",
+            "MethodInvocation",
+            "list",
+            "BinaryOperation",
+            "BinaryOperation",
+            "BinaryOperation"
+        ],
+        "type": "MemberReference",
+        "position": "Position(line=7, column=46)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "StatementExpression",
+            "MethodInvocation",
+            "list",
+            "BinaryOperation",
+            "BinaryOperation"
+        ],
+        "type": "Literal",
+        "position": "Position(line=7, column=55)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "StatementExpression",
+            "MethodInvocation",
+            "list",
+            "BinaryOperation"
+        ],
+        "type": "MemberReference",
+        "position": "Position(line=7, column=65)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list"
+        ],
+        "type": "MethodDeclaration",
+        "position": "Position(line=10, column=19)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration"
+        ],
+        "type": "BasicType",
+        "position": "None"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list"
+        ],
+        "type": "FormalParameter",
+        "position": "Position(line=10, column=43)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "FormalParameter"
+        ],
+        "type": "BasicType",
+        "position": "None"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list"
+        ],
+        "type": "LocalVariableDeclaration",
+        "position": "Position(line=11, column=9)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "LocalVariableDeclaration"
+        ],
+        "type": "BasicType",
+        "position": "None"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "LocalVariableDeclaration",
+            "list"
+        ],
+        "type": "VariableDeclarator",
+        "position": "None"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "LocalVariableDeclaration",
+            "list",
+            "VariableDeclarator"
+        ],
+        "type": "Literal",
+        "position": "Position(line=11, column=26)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list"
+        ],
+        "type": "ForStatement",
+        "position": "Position(line=12, column=9)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "ForStatement"
+        ],
+        "type": "ForControl",
+        "position": "None"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "ForStatement",
+            "ForControl"
+        ],
+        "type": "VariableDeclaration",
+        "position": "None"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "ForStatement",
+            "ForControl",
+            "VariableDeclaration"
+        ],
+        "type": "BasicType",
+        "position": "None"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "ForStatement",
+            "ForControl",
+            "VariableDeclaration",
+            "list"
+        ],
+        "type": "VariableDeclarator",
+        "position": "None"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "ForStatement",
+            "ForControl",
+            "VariableDeclaration",
+            "list",
+            "VariableDeclarator"
+        ],
+        "type": "Literal",
+        "position": "Position(line=12, column=22)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "ForStatement",
+            "ForControl"
+        ],
+        "type": "BinaryOperation",
+        "position": "None"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "ForStatement",
+            "ForControl",
+            "BinaryOperation"
+        ],
+        "type": "MemberReference",
+        "position": "Position(line=12, column=25)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "ForStatement",
+            "ForControl",
+            "BinaryOperation"
+        ],
+        "type": "MemberReference",
+        "position": "Position(line=12, column=30)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "ForStatement",
+            "ForControl",
+            "list"
+        ],
+        "type": "MemberReference",
+        "position": "Position(line=12, column=33)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "ForStatement"
+        ],
+        "type": "BlockStatement",
+        "position": "Position(line=12, column=38)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "ForStatement",
+            "BlockStatement",
+            "list"
+        ],
+        "type": "StatementExpression",
+        "position": "Position(line=13, column=13)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "ForStatement",
+            "BlockStatement",
+            "list",
+            "StatementExpression"
+        ],
+        "type": "Assignment",
+        "position": "None"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "ForStatement",
+            "BlockStatement",
+            "list",
+            "StatementExpression",
+            "Assignment"
+        ],
+        "type": "MemberReference",
+        "position": "Position(line=13, column=13)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "ForStatement",
+            "BlockStatement",
+            "list",
+            "StatementExpression",
+            "Assignment"
+        ],
+        "type": "MemberReference",
+        "position": "Position(line=13, column=26)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list"
+        ],
+        "type": "ReturnStatement",
+        "position": "Position(line=15, column=9)"
+    },
+    {
+        "path": [
+            "CompilationUnit",
+            "list",
+            "ClassDeclaration",
+            "list",
+            "MethodDeclaration",
+            "list",
+            "ReturnStatement"
+        ],
+        "type": "MemberReference",
+        "position": "Position(line=15, column=16)"
+    }
+]
