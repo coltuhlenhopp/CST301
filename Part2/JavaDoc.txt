@@ -1,0 +1,647 @@
+Scanner:  
+A simple text scanner which can parse primitive types and strings using
+ regular expressions.
+
+ 
+A 
+Scanner
+ breaks its input into tokens using a
+ delimiter pattern, which by default matches whitespace. The resulting
+ tokens may then be converted into values of different types using the
+ various 
+next
+ methods.
+
+ 
+For example, this code allows a user to read a number from
+ 
+System.in
+:
+ 
+
+     Scanner sc = new Scanner(System.in);
+     int i = sc.nextInt();
+ 
+
+
+As another example, this code allows 
+long
+ types to be
+ assigned from entries in a file 
+myNumbers
+:
+ 
+
+      Scanner sc = new Scanner(new File("myNumbers"));
+      while (sc.hasNextLong()) {
+          long aLong = sc.nextLong();
+      }
+ 
+
+
+The scanner can also use delimiters other than whitespace. This
+ example reads several items in from a string:
+ 
+
+     String input = "1 fish 2 fish red fish blue fish";
+     Scanner s = new Scanner(input).useDelimiter("\\s*fish\\s*");
+     System.out.println(s.nextInt());
+     System.out.println(s.nextInt());
+     System.out.println(s.next());
+     System.out.println(s.next());
+     s.close();
+ 
+
+
+
+ prints the following output:
+ 
+
+     1
+     2
+     red
+     blue
+ 
+
+
+The same output can be generated with this code, which uses a regular
+ expression to parse all four tokens at once:
+ 
+
+     String input = "1 fish 2 fish red fish blue fish";
+     Scanner s = new Scanner(input);
+     s.findInLine("(\\d+) fish (\\d+) fish (\\w+) fish (\\w+)");
+     MatchResult result = s.match();
+     for (int i=1; i<=result.groupCount(); i++)
+         System.out.println(result.group(i));
+     s.close();
+ 
+
+
+The 
+default whitespace delimiter
+ used
+ by a scanner is as recognized by 
+Character
+.
+isWhitespace
+. The 
+reset()
+
+ method will reset the value of the scanner's delimiter to the default
+ whitespace delimiter regardless of whether it was previously changed.
+
+ 
+A scanning operation may block waiting for input.
+
+ 
+The 
+next()
+ and 
+hasNext()
+ methods and their
+ primitive-type companion methods (such as 
+nextInt()
+ and
+ 
+hasNextInt()
+) first skip any input that matches the delimiter
+ pattern, and then attempt to return the next token. Both 
+hasNext
+
+ and 
+next
+ methods may block waiting for further input.  Whether a
+ 
+hasNext
+ method blocks has no connection to whether or not its
+ associated 
+next
+ method will block.
+
+ 
+ The 
+findInLine(java.lang.String)
+, 
+findWithinHorizon(java.lang.String, int)
+, and 
+skip(java.util.regex.Pattern)
+
+ methods operate independently of the delimiter pattern. These methods will
+ attempt to match the specified pattern with no regard to delimiters in the
+ input and thus can be used in special circumstances where delimiters are
+ not relevant. These methods may block waiting for more input.
+
+ 
+When a scanner throws an 
+InputMismatchException
+, the scanner
+ will not pass the token that caused the exception, so that it may be
+ retrieved or skipped via some other method.
+
+ 
+Depending upon the type of delimiting pattern, empty tokens may be
+ returned. For example, the pattern 
+"\\s+"
+ will return no empty
+ tokens since it matches multiple instances of the delimiter. The delimiting
+ pattern 
+"\\s"
+ could return empty tokens since it only passes one
+ space at a time.
+
+ 
+ A scanner can read text from any object which implements the 
+Readable
+ interface.  If an invocation of the underlying
+ readable's 
+Readable.read(java.nio.CharBuffer)
+ method throws an 
+IOException
+ then the scanner assumes that the end of the input
+ has been reached.  The most recent 
+IOException
+ thrown by the
+ underlying readable can be retrieved via the 
+ioException()
+ method.
+
+ 
+When a 
+Scanner
+ is closed, it will close its input source
+ if the source implements the 
+Closeable
+ interface.
+
+ 
+A 
+Scanner
+ is not safe for multithreaded use without
+ external synchronization.
+
+ 
+Unless otherwise mentioned, passing a 
+null
+ parameter into
+ any method of a 
+Scanner
+ will cause a
+ 
+NullPointerException
+ to be thrown.
+
+ 
+A scanner will default to interpreting numbers as decimal unless a
+ different radix has been set by using the 
+useRadix(int)
+ method. The
+ 
+reset()
+ method will reset the value of the scanner's radix to
+ 
+10
+ regardless of whether it was previously changed.
+
+ 
+ 
+Localized numbers
+ 
+
+
+ An instance of this class is capable of scanning numbers in the standard
+ formats as well as in the formats of the scanner's locale. A scanner's
+ 
+initial locale 
+is the value returned by the 
+Locale.getDefault(Locale.Category.FORMAT)
+ method; it may be changed via the 
+useLocale(java.util.Locale)
+ method. The 
+reset()
+ method will reset the value of the
+ scanner's locale to the initial locale regardless of whether it was
+ previously changed.
+
+ 
+The localized formats are defined in terms of the following parameters,
+ which for a particular locale are taken from that locale's 
+DecimalFormat
+ object, 
+df
+, and its and
+ 
+DecimalFormatSymbols
+ object,
+ 
+dfs
+.
+
+ 
+
+
+LocalGroupSeparator  
+
+
+The character used to separate thousands groups,
+         
+i.e.,
+ 
+dfs.
+getGroupingSeparator()
+
+
+LocalDecimalSeparator  
+
+
+The character used for the decimal point,
+     
+i.e.,
+ 
+dfs.
+getDecimalSeparator()
+
+
+LocalPositivePrefix  
+
+
+The string that appears before a positive number (may
+         be empty), 
+i.e.,
+ 
+df.
+getPositivePrefix()
+
+
+LocalPositiveSuffix  
+
+
+The string that appears after a positive number (may be
+         empty), 
+i.e.,
+ 
+df.
+getPositiveSuffix()
+
+
+LocalNegativePrefix  
+
+
+The string that appears before a negative number (may
+         be empty), 
+i.e.,
+ 
+df.
+getNegativePrefix()
+
+
+LocalNegativeSuffix  
+
+
+The string that appears after a negative number (may be
+         empty), 
+i.e.,
+ 
+df.
+getNegativeSuffix()
+
+
+LocalNaN  
+
+
+The string that represents not-a-number for
+         floating-point values,
+         
+i.e.,
+ 
+dfs.
+getNaN()
+
+
+LocalInfinity  
+
+
+The string that represents infinity for floating-point
+         values, 
+i.e.,
+ 
+dfs.
+getInfinity()
+
+
+
+
+ 
+Number syntax
+ 
+
+
+ The strings that can be parsed as numbers by an instance of this class
+ are specified in terms of the following regular-expression grammar, where
+ Rmax is the highest digit in the radix being used (for example, Rmax is 9 in base 10).
+
+ 
+
+
+NonAsciiDigit
+:
+       
+A non-ASCII character c for which
+            
+Character.isDigit
+(c)
+
+                        returns true
+
+   
+Non0Digit
+:
+       
+[1-
+Rmax
+] | 
+NonASCIIDigit
+
+
+Digit
+:
+       
+[0-
+Rmax
+] | 
+NonASCIIDigit
+
+
+GroupedNumeral
+:
+       
+( 
+Non0Digit
+
+
+Digit
+?
+                   
+Digit
+?
+
+
+    
+( 
+LocalGroupSeparator
+
+
+Digit
+
+
+Digit
+
+
+Digit
+ )+ )
+
+
+Numeral
+:
+       
+( ( 
+Digit
++ )
+               | 
+GroupedNumeral
+ )
+
+
+Integer
+:
+
+
+( [-+]? ( 
+Numeral
+
+                               ) )
+
+
+| 
+LocalPositivePrefix
+ 
+Numeral
+
+
+LocalPositiveSuffix
+
+
+| 
+LocalNegativePrefix
+ 
+Numeral
+
+
+LocalNegativeSuffix
+
+
+DecimalNumeral
+:
+       
+Numeral
+
+
+| 
+Numeral
+
+
+LocalDecimalSeparator
+
+
+Digit
+*
+
+
+| 
+LocalDecimalSeparator
+
+
+Digit
++
+
+
+Exponent
+:
+       
+( [eE] [+-]? 
+Digit
++ )
+
+
+Decimal
+:
+
+
+( [-+]? 
+DecimalNumeral
+
+
+Exponent
+? )
+
+
+| 
+LocalPositivePrefix
+
+
+DecimalNumeral
+
+
+LocalPositiveSuffix
+
+
+Exponent
+?
+
+
+| 
+LocalNegativePrefix
+
+
+DecimalNumeral
+
+
+LocalNegativeSuffix
+
+
+Exponent
+?
+
+
+HexFloat
+:
+       
+[-+]? 0[xX][0-9a-fA-F]*\.[0-9a-fA-F]+
+                 ([pP][-+]?[0-9]+)?
+
+
+NonNumber
+:
+       
+NaN
+                          | 
+LocalNan
+
+                          | Infinity
+                          | 
+LocalInfinity
+
+
+SignedNonNumber
+:
+       
+( [-+]? 
+NonNumber
+ )
+
+
+| 
+LocalPositivePrefix
+
+
+NonNumber
+
+
+LocalPositiveSuffix
+
+
+| 
+LocalNegativePrefix
+
+
+NonNumber
+
+
+LocalNegativeSuffix
+
+
+Float
+:
+       
+Decimal
+
+
+| 
+HexFloat
+
+
+| 
+SignedNonNumber
+
+
+
+
+Whitespace is not significant in the above regular expressions.
+
+
+Random:  
+An instance of this class is used to generate a stream of
+ pseudorandom numbers. The class uses a 48-bit seed, which is
+ modified using a linear congruential formula. (See Donald Knuth,
+ 
+The Art of Computer Programming, Volume 2
+, Section 3.2.1.)
+ 
+
+ If two instances of 
+Random
+ are created with the same
+ seed, and the same sequence of method calls is made for each, they
+ will generate and return identical sequences of numbers. In order to
+ guarantee this property, particular algorithms are specified for the
+ class 
+Random
+. Java implementations must use all the algorithms
+ shown here for the class 
+Random
+, for the sake of absolute
+ portability of Java code. However, subclasses of class 
+Random
+
+ are permitted to use other algorithms, so long as they adhere to the
+ general contracts for all the methods.
+ 
+
+ The algorithms implemented by class 
+Random
+ use a
+ 
+protected
+ utility method that on each invocation can supply
+ up to 32 pseudorandomly generated bits.
+ 
+
+ Many applications will find the method 
+Math.random()
+ simpler to use.
+
+ 
+Instances of 
+java.util.Random
+ are threadsafe.
+ However, the concurrent use of the same 
+java.util.Random
+
+ instance across threads may encounter contention and consequent
+ poor performance. Consider instead using
+ 
+ThreadLocalRandom
+ in multithreaded
+ designs.
+
+ 
+Instances of 
+java.util.Random
+ are not cryptographically
+ secure.  Consider instead using 
+SecureRandom
+ to
+ get a cryptographically secure pseudo-random number generator for use
+ by security-sensitive applications.
+
+

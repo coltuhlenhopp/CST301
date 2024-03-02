@@ -1,0 +1,16 @@
+{
+    "reserved_words": [],
+    "literals": [
+        "5",
+        "\"Factorial of \"",
+        "\" is: \"",
+        "1",
+        "1"
+    ],
+    "identifiers": [
+        "number",
+        "factorial",
+        "factorial",
+        "i"
+    ]
+}

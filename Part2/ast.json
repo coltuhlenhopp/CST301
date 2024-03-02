@@ -1,0 +1,795 @@
+{
+    "CompilationUnit": {
+        "package": "None",
+        "imports": [
+            {
+                "Import": {
+                    "path": "java.util.Scanner",
+                    "static": "False",
+                    "wildcard": "False",
+                    "_position": {
+                        "line": "1",
+                        "column": "1"
+                    }
+                }
+            },
+            {
+                "Import": {
+                    "path": "java.util.Random",
+                    "static": "False",
+                    "wildcard": "False",
+                    "_position": {
+                        "line": "2",
+                        "column": "1"
+                    }
+                }
+            }
+        ],
+        "types": [
+            {
+                "ClassDeclaration": {
+                    "modifiers": [
+                        "public"
+                    ],
+                    "annotations": [],
+                    "documentation": "None",
+                    "name": "RandomNumberGuessingGame",
+                    "body": [
+                        {
+                            "MethodDeclaration": {
+                                "documentation": "None",
+                                "modifiers": [
+                                    "public",
+                                    "static"
+                                ],
+                                "annotations": [],
+                                "type_parameters": "None",
+                                "return_type": "None",
+                                "name": "main",
+                                "parameters": [
+                                    {
+                                        "FormalParameter": {
+                                            "modifiers": [],
+                                            "annotations": [],
+                                            "type": {
+                                                "ReferenceType": {
+                                                    "name": "String",
+                                                    "dimensions": [
+                                                        "None"
+                                                    ],
+                                                    "arguments": "None",
+                                                    "sub_type": "None"
+                                                }
+                                            },
+                                            "name": "args",
+                                            "varargs": "False",
+                                            "_position": {
+                                                "line": "5",
+                                                "column": "29"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "throws": "None",
+                                "body": [
+                                    {
+                                        "LocalVariableDeclaration": {
+                                            "modifiers": [],
+                                            "annotations": [],
+                                            "type": {
+                                                "ReferenceType": {
+                                                    "name": "Scanner",
+                                                    "dimensions": [],
+                                                    "arguments": "None",
+                                                    "sub_type": "None"
+                                                }
+                                            },
+                                            "declarators": [
+                                                {
+                                                    "VariableDeclarator": {
+                                                        "name": "scanner",
+                                                        "dimensions": [],
+                                                        "initializer": {
+                                                            "ClassCreator": {
+                                                                "prefix_operators": [],
+                                                                "postfix_operators": [],
+                                                                "qualifier": "None",
+                                                                "selectors": [],
+                                                                "type": {
+                                                                    "ReferenceType": {
+                                                                        "name": "Scanner",
+                                                                        "dimensions": "None",
+                                                                        "arguments": "None",
+                                                                        "sub_type": "None"
+                                                                    }
+                                                                },
+                                                                "constructor_type_arguments": "None",
+                                                                "arguments": [
+                                                                    {
+                                                                        "MemberReference": {
+                                                                            "prefix_operators": [],
+                                                                            "postfix_operators": [],
+                                                                            "qualifier": "System",
+                                                                            "selectors": [],
+                                                                            "member": "in",
+                                                                            "_position": {
+                                                                                "line": "6",
+                                                                                "column": "39"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "body": "None"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "_position": {
+                                                "line": "6",
+                                                "column": "9"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "LocalVariableDeclaration": {
+                                            "modifiers": [],
+                                            "annotations": [],
+                                            "type": {
+                                                "ReferenceType": {
+                                                    "name": "Random",
+                                                    "dimensions": [],
+                                                    "arguments": "None",
+                                                    "sub_type": "None"
+                                                }
+                                            },
+                                            "declarators": [
+                                                {
+                                                    "VariableDeclarator": {
+                                                        "name": "random",
+                                                        "dimensions": [],
+                                                        "initializer": {
+                                                            "ClassCreator": {
+                                                                "prefix_operators": [],
+                                                                "postfix_operators": [],
+                                                                "qualifier": "None",
+                                                                "selectors": [],
+                                                                "type": {
+                                                                    "ReferenceType": {
+                                                                        "name": "Random",
+                                                                        "dimensions": "None",
+                                                                        "arguments": "None",
+                                                                        "sub_type": "None"
+                                                                    }
+                                                                },
+                                                                "constructor_type_arguments": "None",
+                                                                "arguments": [],
+                                                                "body": "None"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "_position": {
+                                                "line": "7",
+                                                "column": "9"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "LocalVariableDeclaration": {
+                                            "modifiers": [],
+                                            "annotations": [],
+                                            "type": {
+                                                "BasicType": {
+                                                    "name": "int",
+                                                    "dimensions": []
+                                                }
+                                            },
+                                            "declarators": [
+                                                {
+                                                    "VariableDeclarator": {
+                                                        "name": "randomNumber",
+                                                        "dimensions": [],
+                                                        "initializer": {
+                                                            "MethodInvocation": {
+                                                                "prefix_operators": [],
+                                                                "postfix_operators": [],
+                                                                "qualifier": "random",
+                                                                "selectors": [],
+                                                                "type_arguments": "None",
+                                                                "arguments": [
+                                                                    {
+                                                                        "Literal": {
+                                                                            "prefix_operators": [],
+                                                                            "postfix_operators": [],
+                                                                            "qualifier": "None",
+                                                                            "selectors": [],
+                                                                            "value": "100",
+                                                                            "_position": {
+                                                                                "line": "9",
+                                                                                "column": "43"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "member": "nextInt",
+                                                                "_position": {
+                                                                    "line": "9",
+                                                                    "column": "28"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "_position": {
+                                                "line": "9",
+                                                "column": "9"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "StatementExpression": {
+                                            "label": "None",
+                                            "expression": {
+                                                "MethodInvocation": {
+                                                    "prefix_operators": [],
+                                                    "postfix_operators": [],
+                                                    "qualifier": "System.out",
+                                                    "selectors": [],
+                                                    "type_arguments": "None",
+                                                    "arguments": [
+                                                        {
+                                                            "Literal": {
+                                                                "prefix_operators": [],
+                                                                "postfix_operators": [],
+                                                                "qualifier": "None",
+                                                                "selectors": [],
+                                                                "value": "\"Welcome to the Random Number Guessing Game!\"",
+                                                                "_position": {
+                                                                    "line": "11",
+                                                                    "column": "28"
+                                                                }
+                                                            }
+                                                        }
+                                                    ],
+                                                    "member": "println",
+                                                    "_position": {
+                                                        "line": "11",
+                                                        "column": "9"
+                                                    }
+                                                }
+                                            },
+                                            "_position": {
+                                                "line": "11",
+                                                "column": "9"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "StatementExpression": {
+                                            "label": "None",
+                                            "expression": {
+                                                "MethodInvocation": {
+                                                    "prefix_operators": [],
+                                                    "postfix_operators": [],
+                                                    "qualifier": "System.out",
+                                                    "selectors": [],
+                                                    "type_arguments": "None",
+                                                    "arguments": [
+                                                        {
+                                                            "Literal": {
+                                                                "prefix_operators": [],
+                                                                "postfix_operators": [],
+                                                                "qualifier": "None",
+                                                                "selectors": [],
+                                                                "value": "\"Try to guess the number between 0 and 99.\"",
+                                                                "_position": {
+                                                                    "line": "12",
+                                                                    "column": "28"
+                                                                }
+                                                            }
+                                                        }
+                                                    ],
+                                                    "member": "println",
+                                                    "_position": {
+                                                        "line": "12",
+                                                        "column": "9"
+                                                    }
+                                                }
+                                            },
+                                            "_position": {
+                                                "line": "12",
+                                                "column": "9"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "LocalVariableDeclaration": {
+                                            "modifiers": [],
+                                            "annotations": [],
+                                            "type": {
+                                                "BasicType": {
+                                                    "name": "int",
+                                                    "dimensions": []
+                                                }
+                                            },
+                                            "declarators": [
+                                                {
+                                                    "VariableDeclarator": {
+                                                        "name": "guess",
+                                                        "dimensions": [],
+                                                        "initializer": "None"
+                                                    }
+                                                }
+                                            ],
+                                            "_position": {
+                                                "line": "14",
+                                                "column": "9"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "LocalVariableDeclaration": {
+                                            "modifiers": [],
+                                            "annotations": [],
+                                            "type": {
+                                                "BasicType": {
+                                                    "name": "boolean",
+                                                    "dimensions": []
+                                                }
+                                            },
+                                            "declarators": [
+                                                {
+                                                    "VariableDeclarator": {
+                                                        "name": "correct",
+                                                        "dimensions": [],
+                                                        "initializer": {
+                                                            "Literal": {
+                                                                "prefix_operators": [],
+                                                                "postfix_operators": [],
+                                                                "qualifier": "None",
+                                                                "selectors": [],
+                                                                "value": "false",
+                                                                "_position": {
+                                                                    "line": "15",
+                                                                    "column": "27"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "_position": {
+                                                "line": "15",
+                                                "column": "9"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "WhileStatement": {
+                                            "label": "None",
+                                            "condition": {
+                                                "MemberReference": {
+                                                    "prefix_operators": [
+                                                        "!"
+                                                    ],
+                                                    "postfix_operators": [],
+                                                    "qualifier": "",
+                                                    "selectors": [],
+                                                    "member": "correct",
+                                                    "_position": {
+                                                        "line": "17",
+                                                        "column": "17"
+                                                    }
+                                                }
+                                            },
+                                            "body": {
+                                                "BlockStatement": {
+                                                    "label": "None",
+                                                    "statements": [
+                                                        {
+                                                            "StatementExpression": {
+                                                                "label": "None",
+                                                                "expression": {
+                                                                    "MethodInvocation": {
+                                                                        "prefix_operators": [],
+                                                                        "postfix_operators": [],
+                                                                        "qualifier": "System.out",
+                                                                        "selectors": [],
+                                                                        "type_arguments": "None",
+                                                                        "arguments": [
+                                                                            {
+                                                                                "Literal": {
+                                                                                    "prefix_operators": [],
+                                                                                    "postfix_operators": [],
+                                                                                    "qualifier": "None",
+                                                                                    "selectors": [],
+                                                                                    "value": "\"Enter your guess: \"",
+                                                                                    "_position": {
+                                                                                        "line": "18",
+                                                                                        "column": "30"
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        ],
+                                                                        "member": "print",
+                                                                        "_position": {
+                                                                            "line": "18",
+                                                                            "column": "13"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "_position": {
+                                                                    "line": "18",
+                                                                    "column": "13"
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "StatementExpression": {
+                                                                "label": "None",
+                                                                "expression": {
+                                                                    "Assignment": {
+                                                                        "expressionl": {
+                                                                            "MemberReference": {
+                                                                                "prefix_operators": [],
+                                                                                "postfix_operators": [],
+                                                                                "qualifier": "",
+                                                                                "selectors": [],
+                                                                                "member": "guess",
+                                                                                "_position": {
+                                                                                    "line": "19",
+                                                                                    "column": "13"
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "value": {
+                                                                            "MethodInvocation": {
+                                                                                "prefix_operators": [],
+                                                                                "postfix_operators": [],
+                                                                                "qualifier": "scanner",
+                                                                                "selectors": [],
+                                                                                "type_arguments": "None",
+                                                                                "arguments": [],
+                                                                                "member": "nextInt",
+                                                                                "_position": {
+                                                                                    "line": "19",
+                                                                                    "column": "21"
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "type": "="
+                                                                    }
+                                                                },
+                                                                "_position": {
+                                                                    "line": "19",
+                                                                    "column": "13"
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "IfStatement": {
+                                                                "label": "None",
+                                                                "condition": {
+                                                                    "BinaryOperation": {
+                                                                        "operator": "==",
+                                                                        "operandl": {
+                                                                            "MemberReference": {
+                                                                                "prefix_operators": [],
+                                                                                "postfix_operators": [],
+                                                                                "qualifier": "",
+                                                                                "selectors": [],
+                                                                                "member": "guess",
+                                                                                "_position": {
+                                                                                    "line": "21",
+                                                                                    "column": "17"
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "operandr": {
+                                                                            "MemberReference": {
+                                                                                "prefix_operators": [],
+                                                                                "postfix_operators": [],
+                                                                                "qualifier": "",
+                                                                                "selectors": [],
+                                                                                "member": "randomNumber",
+                                                                                "_position": {
+                                                                                    "line": "21",
+                                                                                    "column": "26"
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "then_statement": {
+                                                                    "BlockStatement": {
+                                                                        "label": "None",
+                                                                        "statements": [
+                                                                            {
+                                                                                "StatementExpression": {
+                                                                                    "label": "None",
+                                                                                    "expression": {
+                                                                                        "MethodInvocation": {
+                                                                                            "prefix_operators": [],
+                                                                                            "postfix_operators": [],
+                                                                                            "qualifier": "System.out",
+                                                                                            "selectors": [],
+                                                                                            "type_arguments": "None",
+                                                                                            "arguments": [
+                                                                                                {
+                                                                                                    "Literal": {
+                                                                                                        "prefix_operators": [],
+                                                                                                        "postfix_operators": [],
+                                                                                                        "qualifier": "None",
+                                                                                                        "selectors": [],
+                                                                                                        "value": "\"Congratulations! You guessed the correct number.\"",
+                                                                                                        "_position": {
+                                                                                                            "line": "22",
+                                                                                                            "column": "36"
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            ],
+                                                                                            "member": "println",
+                                                                                            "_position": {
+                                                                                                "line": "22",
+                                                                                                "column": "17"
+                                                                                            }
+                                                                                        }
+                                                                                    },
+                                                                                    "_position": {
+                                                                                        "line": "22",
+                                                                                        "column": "17"
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "StatementExpression": {
+                                                                                    "label": "None",
+                                                                                    "expression": {
+                                                                                        "Assignment": {
+                                                                                            "expressionl": {
+                                                                                                "MemberReference": {
+                                                                                                    "prefix_operators": [],
+                                                                                                    "postfix_operators": [],
+                                                                                                    "qualifier": "",
+                                                                                                    "selectors": [],
+                                                                                                    "member": "correct",
+                                                                                                    "_position": {
+                                                                                                        "line": "23",
+                                                                                                        "column": "17"
+                                                                                                    }
+                                                                                                }
+                                                                                            },
+                                                                                            "value": {
+                                                                                                "Literal": {
+                                                                                                    "prefix_operators": [],
+                                                                                                    "postfix_operators": [],
+                                                                                                    "qualifier": "None",
+                                                                                                    "selectors": [],
+                                                                                                    "value": "true",
+                                                                                                    "_position": {
+                                                                                                        "line": "23",
+                                                                                                        "column": "27"
+                                                                                                    }
+                                                                                                }
+                                                                                            },
+                                                                                            "type": "="
+                                                                                        }
+                                                                                    },
+                                                                                    "_position": {
+                                                                                        "line": "23",
+                                                                                        "column": "17"
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        ],
+                                                                        "_position": {
+                                                                            "line": "21",
+                                                                            "column": "40"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "else_statement": {
+                                                                    "IfStatement": {
+                                                                        "label": "None",
+                                                                        "condition": {
+                                                                            "BinaryOperation": {
+                                                                                "operator": "<",
+                                                                                "operandl": {
+                                                                                    "MemberReference": {
+                                                                                        "prefix_operators": [],
+                                                                                        "postfix_operators": [],
+                                                                                        "qualifier": "",
+                                                                                        "selectors": [],
+                                                                                        "member": "guess",
+                                                                                        "_position": {
+                                                                                            "line": "24",
+                                                                                            "column": "24"
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "operandr": {
+                                                                                    "MemberReference": {
+                                                                                        "prefix_operators": [],
+                                                                                        "postfix_operators": [],
+                                                                                        "qualifier": "",
+                                                                                        "selectors": [],
+                                                                                        "member": "randomNumber",
+                                                                                        "_position": {
+                                                                                            "line": "24",
+                                                                                            "column": "32"
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "then_statement": {
+                                                                            "BlockStatement": {
+                                                                                "label": "None",
+                                                                                "statements": [
+                                                                                    {
+                                                                                        "StatementExpression": {
+                                                                                            "label": "None",
+                                                                                            "expression": {
+                                                                                                "MethodInvocation": {
+                                                                                                    "prefix_operators": [],
+                                                                                                    "postfix_operators": [],
+                                                                                                    "qualifier": "System.out",
+                                                                                                    "selectors": [],
+                                                                                                    "type_arguments": "None",
+                                                                                                    "arguments": [
+                                                                                                        {
+                                                                                                            "Literal": {
+                                                                                                                "prefix_operators": [],
+                                                                                                                "postfix_operators": [],
+                                                                                                                "qualifier": "None",
+                                                                                                                "selectors": [],
+                                                                                                                "value": "\"Too low! Try again.\"",
+                                                                                                                "_position": {
+                                                                                                                    "line": "25",
+                                                                                                                    "column": "36"
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    ],
+                                                                                                    "member": "println",
+                                                                                                    "_position": {
+                                                                                                        "line": "25",
+                                                                                                        "column": "17"
+                                                                                                    }
+                                                                                                }
+                                                                                            },
+                                                                                            "_position": {
+                                                                                                "line": "25",
+                                                                                                "column": "17"
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "_position": {
+                                                                                    "line": "24",
+                                                                                    "column": "46"
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "else_statement": {
+                                                                            "BlockStatement": {
+                                                                                "label": "None",
+                                                                                "statements": [
+                                                                                    {
+                                                                                        "StatementExpression": {
+                                                                                            "label": "None",
+                                                                                            "expression": {
+                                                                                                "MethodInvocation": {
+                                                                                                    "prefix_operators": [],
+                                                                                                    "postfix_operators": [],
+                                                                                                    "qualifier": "System.out",
+                                                                                                    "selectors": [],
+                                                                                                    "type_arguments": "None",
+                                                                                                    "arguments": [
+                                                                                                        {
+                                                                                                            "Literal": {
+                                                                                                                "prefix_operators": [],
+                                                                                                                "postfix_operators": [],
+                                                                                                                "qualifier": "None",
+                                                                                                                "selectors": [],
+                                                                                                                "value": "\"Too high! Try again.\"",
+                                                                                                                "_position": {
+                                                                                                                    "line": "27",
+                                                                                                                    "column": "36"
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    ],
+                                                                                                    "member": "println",
+                                                                                                    "_position": {
+                                                                                                        "line": "27",
+                                                                                                        "column": "17"
+                                                                                                    }
+                                                                                                }
+                                                                                            },
+                                                                                            "_position": {
+                                                                                                "line": "27",
+                                                                                                "column": "17"
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "_position": {
+                                                                                    "line": "26",
+                                                                                    "column": "20"
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "_position": {
+                                                                            "line": "24",
+                                                                            "column": "20"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "_position": {
+                                                                    "line": "21",
+                                                                    "column": "13"
+                                                                }
+                                                            }
+                                                        }
+                                                    ],
+                                                    "_position": {
+                                                        "line": "17",
+                                                        "column": "26"
+                                                    }
+                                                }
+                                            },
+                                            "_position": {
+                                                "line": "17",
+                                                "column": "9"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "StatementExpression": {
+                                            "label": "None",
+                                            "expression": {
+                                                "MethodInvocation": {
+                                                    "prefix_operators": [],
+                                                    "postfix_operators": [],
+                                                    "qualifier": "scanner",
+                                                    "selectors": [],
+                                                    "type_arguments": "None",
+                                                    "arguments": [],
+                                                    "member": "close",
+                                                    "_position": {
+                                                        "line": "31",
+                                                        "column": "9"
+                                                    }
+                                                }
+                                            },
+                                            "_position": {
+                                                "line": "31",
+                                                "column": "9"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "_position": {
+                                    "line": "5",
+                                    "column": "19"
+                                }
+                            }
+                        }
+                    ],
+                    "type_parameters": "None",
+                    "extends": "None",
+                    "implements": "None",
+                    "_position": {
+                        "line": "4",
+                        "column": "8"
+                    }
+                }
+            }
+        ]
+    }
+}
