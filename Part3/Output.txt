@@ -1,0 +1,112 @@
+Imports: {'Collections', 'OptionalUtil', 'BibEntry', 'JSONObject', 'Author', 'JSONArray', 'JsonReader', 'IntStream', 'QueryNode', 'URISyntaxException', 'ClearFormatter', 'EntryType', 'RemoveBracesFormatter', 'StandardEntryType', 'DOI', 'ArrayList', 'AuthorList', 'List', 'Optional', 'URIBuilder', 'StandardField', 'MalformedURLException', 'importer', 'StringSimilarity', 'JSONException', 'FieldFormatterCleanup', 'URL', 'DefaultQueryTransformer'}
+Failed to find content section on https://docs.oracle.com/javase/8/docs/api/org/jabref/model/entry/Author.html
+Failed to find content section on https://docs.oracle.com/javase/8/docs/api/org/apache/http/client/utils/URIBuilder.html
+Failed to find content section on https://docs.oracle.com/javase/8/docs/api/org/jabref/model/entry/field/StandardField.html
+Failed to find content section on https://docs.oracle.com/javase/8/docs/api/org/jabref/logic/importer.html
+Failed to find content section on https://docs.oracle.com/javase/8/docs/api/org/jabref/logic/formatter/bibtexfields/RemoveBracesFormatter.html
+Failed to find content section on https://docs.oracle.com/javase/8/docs/api/kong/unirest/json/JSONException.html
+Failed to find content section on https://docs.oracle.com/javase/8/docs/api/org/jabref/model/util/OptionalUtil.html
+Failed to find content section on https://docs.oracle.com/javase/8/docs/api/kong/unirest/json/JSONArray.html
+Failed to find content section on https://docs.oracle.com/javase/8/docs/api/org/jabref/logic/importer/fetcher/transformers/DefaultQueryTransformer.html
+Failed to find content section on https://docs.oracle.com/javase/8/docs/api/org/jabref/model/entry/BibEntry.html
+Failed to find content section on https://docs.oracle.com/javase/8/docs/api/org/apache/lucene/queryparser/flexible/core/nodes/QueryNode.html
+Failed to find content section on https://docs.oracle.com/javase/8/docs/api/org/jabref/model/entry/types/StandardEntryType.html
+Failed to find content section on https://docs.oracle.com/javase/8/docs/api/org/jabref/logic/util/strings/StringSimilarity.html
+Failed to find content section on https://docs.oracle.com/javase/8/docs/api/org/jabref/logic/importer/util/JsonReader.html
+Failed to find content section on https://docs.oracle.com/javase/8/docs/api/org/jabref/model/entry/identifier/DOI.html
+Failed to find content section on https://docs.oracle.com/javase/8/docs/api/org/jabref/logic/formatter/bibtexfields/ClearFormatter.html
+Failed to find content section on https://docs.oracle.com/javase/8/docs/api/org/jabref/model/entry/types/EntryType.html
+Failed to find content section on https://docs.oracle.com/javase/8/docs/api/org/jabref/model/entry/AuthorList.html
+Failed to find content section on https://docs.oracle.com/javase/8/docs/api/org/jabref/logic/cleanup/FieldFormatterCleanup.html
+Failed to find content section on https://docs.oracle.com/javase/8/docs/api/kong/unirest/json/JSONObject.html
+Reserved Words: {'int'}
+Interesting Things: ['getname', 'geturlforentry', 'geturlforquery', 'geturlforidentifier', 'getparser', 'dopostcleanup', 'jsonitemtobibentry', 'toauthors', 'converttype', 'extractidentifier', 'getidentifiername']
+Variables: {'exception', 'jsonobject', 'fetchedentry', 'author', 'defaultquerytransformer', 'datawithsubtitle', 'clearformatter', 'optional', 'jsonarray', 'entrybasedparserfetcher', 'doi', 'entry', 'datasubtitle', 'searchbasedparserfetcher', 'idbasedparserfetcher', 'string', 'i', 'parseexception', 'uribuilder', 'crossref', 'fieldformattercleanup', 'idparserfetcher', 'list', 'stringsimilarity', 'response', 'entrytitle', 'bibentry', 'item', 'org.jabref.logic.importer.fetcher', 'items', 'entries', 'datatitle'}
+Classified Domains List:
+Parser
+Logic
+Input-Output
+Database
+Search
+
+Classified Domains, Function Calls, and Definitions:
+Parser
+  SyntaxParser:
+    Function call: parseCode(code)
+    Definition: The function `parseCode(code)` seems to be a placeholder for a function that would analyze or process the given `code`.
+    Function call: analyzeSyntax(text)
+    Definition: The function `analyzeSyntax(text)` is typically used for analyzing the syntactic structure of text within natural language processing.
+    Function call: generateAST(code)
+    Definition: The function `generateAST(code)` is typically used to generate an Abstract Syntax Tree (AST).
+
+
+Logic
+  RuleEngine:
+    Function call: addRule(rule)
+    Definition: The function `addRule(rule)` is typically used in the context of adding a new rule to a set of rules or a system.
+    Function call: evaluateRule(rule)
+    Definition: It seems like you're referring to a function named `evaluateRule(rule)`.
+    Function call: removeRule(rule)
+    Definition: The function `removeRule(rule)` is typically used in programming to remove a specific rule from a set of rules.
+
+
+Input-Output
+  java.io.FileReader:
+    Function call: read()
+    Definition: The `read()` function is commonly used for reading input from a file or a data stream.
+    Function call: close()
+    Definition: The `close()` function is typically used in programming to close a file or a connection that has been opened.
+
+  java.io.FileWriter:
+    Function call: write(str)
+    Definition: The function `write(str)` is typically used to write a string to a file or output stream.
+    Function call: close()
+    Definition: The `close()` function is typically used in programming to close a file or a network connection that has been opened.
+
+
+Database
+  java.sql.Connection:
+    Function call: getConnection(dbcon, user, pswd)
+    Definition: The function `getConnection(dbcon, user, pswd)` appears to be a method used to establish a connection to a database.
+    Function call: createStatement()
+    Definition: The function `createStatement()` is typically used in programming to create a new SQL statement object, which can be used to execute queries and update statements against a database.
+    Function call: prepareStatement(sql)
+    Definition: The `prepareStatement(sql)` function is typically used in the context of database operations.
+    Function call: setString(1, pr)
+    Definition: The function `setString` is typically used in programming to assign a string value to a variable or to replace the content of a string variable with a new string value.
+    Function call: setString(2, issue)
+    Definition: The function `setString` is typically used in the context of databases, particularly when preparing a statement to be executed against a database.
+    Function call: setString(3, projName)
+    Definition: The function `setString` is typically used in the context of databases, particularly when preparing a statement to insert or update data.
+    Function call: executeUpdate()
+    Definition: The `executeUpdate()` function is typically used in the context of SQL operations with a database.
+    Function call: close()
+    Definition: The `close()` function is typically used in programming to close a file or a network connection that has been opened.
+
+  java.sql.Statement:
+    Function call: getConnection(dbcon, user, pswd)
+    Definition: The function `getConnection(dbcon, user, pswd)` appears to be a method used to establish a connection to a database.
+    Function call: createStatement()
+    Definition: The function `createStatement()` is typically used in programming to create a SQL statement, which can then be executed against a database to perform operations such as querying or updating data.
+    Function call: prepareStatement(sql)
+    Definition: The `prepareStatement(sql)` function is typically used in the context of SQL databases.
+    Function call: setString(1, pr)
+    Definition: The function `setString` is typically used in programming to assign a string value to a variable or to set the value of a parameter in a prepared statement for SQL operations.
+    Function call: setString(2, issue)
+    Definition: The function `setString` is typically used in programming to assign a string value to a particular variable or to set the value of a parameter in a prepared statement for databases.
+    Function call: setString(3, projName)
+    Definition: The function `setString(3, projName)` is typically used in the context of database operations.
+    Function call: executeUpdate()
+    Definition: The `executeUpdate()` function is typically used in the context of SQL databases.
+    Function call: close()
+    Definition: The `close()` function is typically used in programming to close a file or a resource that has been opened.
+
+
+Search
+  SearchEngine:
+    Function call: search(query)
+    Definition: It seems like you're referring to a `search` function, which typically takes a `query` as an argument.
+    Function call: indexDocument(document)
+    Definition: The function `indexDocument(document)` is typically used for indexing a document in a database or search engine.
+    Function call: retrieveResults()
+    Definition: The function `retrieveResults()` sounds like it could be designed to fetch and return data, possibly from a database or an API call.
